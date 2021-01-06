@@ -15,6 +15,9 @@ Syntax highlighted code block
 ## Header 2
 ### Header 3
 
+![Me](/Me.jpeg)
+Format: ![Alt Text](url)
+
 - Bulleted
 - List
 
