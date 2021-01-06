@@ -1,40 +1,33 @@
-## Welcome to GitHub Pages
+<img src="Me.jpg" alt="drawing" width="200"/>
 
-You can use the [editor on GitHub](https://github.com/xlmentx/AriHCortes.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# *The largest heading*
+## **The second largest heading**
+###### ~~The smallest heading~~
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+In the words of Abraham Lincoln:
 
-### Markdown
+> Pardon my French
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-![Me](/Me.jpeg)
-Format: ![Alt Text](url)
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Some basic Git commands are:
 ```
+git status
+git add
+git commit
+```
+Check out the [ReadMe](https://github.com/xlmentx/xlmentx/blob/add-read-me/README.md)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- George Washington
+- John Adams
+- Thomas Jefferson
 
-### Jekyll Themes
+1. James Madison
+2. James Monroe
+3. John Quincy Adams
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/xlmentx/AriHCortes.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+1. First list item
+   - First nested list item
+     - Second nested list item
+     
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
