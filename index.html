@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <figure>
+            <img src="Me.jpg" alt="drawing" width="200"/>
+            <figcaption><b>Created By: Ari Cortes</b></figcaption>
+            </figure>
+        
+        <title>Lab_2!</title>
+            
+        <meta name="description" content="Ari's Lab2">
+        
+        <link rel="stylesheet" href="dummy.css">
+        
+        <style>
+            aside {
+                width: 30%;
+                padding-left: 15px;
+                margin-left: 15px;
+                float: right;
+                background-color: lightgray;
+                }
+            table, th, td {
+                border: 1px solid black;
+                }
+            </style>
+        <hr>
+        </head>
+  
+    <body>
+        <button onclick="showContent()">Show another</button>
+
+<template>
+  <h2>Flower</h2>
+  <img src="creek.jpg" alt="Creek" width="200"/>
+</template>
+
+<script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+        
+        <header>
+            <nav>
+                <a href="/html/">Home</a> |
+                <a href="/css/">Top</a> |
+                <a href="/js/">Bottom</a> |
+                <a href="https://github.com/xlmentx/xlmentx/blob/add-read-me/README.md">ReadMe</a>
+                </nav>
+            <hr>
+            </header>
+    
+        <aside>
+            <p><strong>Creek By Mono Hot Springs </strong></p>
+            <picture><img src="creek.jpg" alt="Creek" width="200"/></picture>      
+            
+            <pre>  
+                 *
+                ***
+               *****
+              *     *
+             ***   ***
+            ***** *****
+            </pre>
+                   
+            <button onclick="showContent()">Show hidden content</button>
+
+            <template>
+                <h2>Flower</h2>
+                </template>
+
+            <script>
+                function showContent() {
+                var temp = document.getElementsByTagName("template")[0];
+                var clon = temp.content.cloneNode(true);
+                document.body.appendChild(clon);
+                }
+                </script>
+            
+            <canvas id="myCanvas"></canvas>
+                <script>
+                    var c = document.getElementById("myCanvas");
+                    var ctx = c.getContext("2d");
+                    ctx.beginPath();
+                    ctx.moveTo(0, 100);
+                    ctx.lineTo(50, 0);
+                    ctx.lineTo(100, 100);
+                    ctx.closePath();
+                    ctx.fillStyle = "#00F3FF";
+                    ctx.fill();
+                    </script>
+            
+            <svg width="150" height="150">
+                <polygon points="65,5 35,100 110,40 20,40 95,100" style="fill:lime;stroke:purple;stroke-width:5;" />
+                </svg>        
+            
+            <table>
+                <caption>Work Schedule</caption>
+                <colgroup>
+                    <col style="background-color:lightblue">
+                    <col style="background-color:lightgrey">
+                    </colgroup>
+                <tr><th>Day</th><th>Time</th>
+                    </tr>
+                <tr><td>Tuesaday</td><td>8:00AM-2:00PM</td>
+                    </tr>
+                <tr><td>Thursda</td><td>8:00AM-3:00PM</td>
+                    </tr>
+                </table><br><br>
+            
+            <details>
+                <summary>Hello?</summary>
+                    <p>   Hi! :D</p>
+                    <button type="button" onclick="alert('Thanks!')">Click Me!</button>
+                </details>
+            
+            </aside>
+             
+        <main>
+            <h1>Media</h1>
+                <section>
+                    <p><b>Song of Storms</b>
+                        <audio controls><source src="Song%20Of%20Storms%20Dubstep%20Remix.mp3" type="audio/mpeg"></audio>
+                        <b>Hand Spring</b>
+                        <video width="240" height="135" controls>
+                            <source src="handSpring.mp4" type="video/mp4"></video>
+                        
+                        </p>
+                    </section>
+            <br><h2>Thoughts</h2>     
+                <div>    
+                    <p><i>Cow<br>Sheep<br>Dog</i></p>
+                        
+                    <span>
+                        <ul>
+                            <li>Coffee</li>
+                            <li>Boba</li>
+                            <li>LaCroix</li>
+                            </ul>
+                        <ol>
+                            <li>Sushi</li>
+                            <li>PadThai</li>
+                            <li>Burger</li>
+                        </ol>
+                        </span>
+                    </div>
+                
+                
+                <br><form>
+                    <fieldset>
+                        <legend>Share Your Info::</legend>
+                        <label for="fname"> Name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="food"> Choose a food:</label>
+                        <select name="food" id="food">
+                        <optgroup label="Mexican">
+                            <option value="tacos">tacos</option>
+                            <option value="burritos">burritos</option>
+                        </optgroup>
+                        <optgroup label="Japanese">
+                            <option value="sushi">sushi</option>
+                            <option value="ramen">ramen</option>
+                        </optgroup>
+                        </select><br><br>
+                        <label for="number"> Phone:</label>
+                        <textarea id="number" name="number" rows="1" cols="13">
+                        </textarea><br><br>
+                        <label for="size">Choose your shirt size:</label>
+                        <input list="sizes" name="size" id="size">
+                        <datalist id="sizes">
+                            <option value="Small">
+                            <option value="Medium">
+                            <option value="Large">
+                            <option value="xLarge">
+                            </datalist><br><br>
+                        <label for="color">Choose your favorite Color:</label>
+                        <input type="color" id="color" name="color"><br><br>
+                        <label for="date">Todays date:</label>
+                        <input type="date" id="date" name="date"><br><br>
+                        <label for="time">Break time:</label>
+                        <input type="time" id="time" name="time"><br><br>
+                        <label for="hunger"> Hunger level:</label>
+                        <input type="range" id="hunger" name="hunger"><br><br>
+                        <label for="file"> Your favorite file:</label>
+                        <input type="file" id="file" name="file"><br><br>
+                        <label for="accept"> Do you accept these terms?:</label>
+                        <input type="checkbox" id="accept" name="accept"><br><br> 
+                        </fieldset>
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
+         
+                    </form>
+            
+            <br><h3><em>UCSD Campus</em></h3>
+                <iframe id="inlineFrameExample"
+                    title="Inline Frame Example"
+                    width="300"
+                    height="200"
+                    src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fuccsc.ucsd.edu%2Fabout%2Findex.html&psig=AOvVaw3Stm5w0Pz2U9B6mtiNLxzF&ust=1610679388683000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIjbwLi2mu4CFQAAAAAdAAAAABAD">
+                    </iframe>
+            <hr>
+            </main>          
+        <footer>
+            <p>Edited: 1/13/2021</p>
+            <code><p>By: Ari Cortes</p></code>
+            <hr>
+            </footer>    
+        </body>
+    </html>
