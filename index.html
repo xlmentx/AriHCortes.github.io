@@ -50,21 +50,6 @@
              ***   ***
             ***** *****
             </pre>
-                   
-            <button onclick="showContent()">Show hidden content</button>
-
-<template>
-  <h2>Flower</h2>
-  <img src="creek.jpg" alt="Creek" width="200"/>
-</template>
-
-<script>
-function showContent() {
-  var temp = document.getElementsByTagName("template")[0];
-  var clon = temp.content.cloneNode(true);
-  document.body.appendChild(clon);
-}
-</script>
             
             <canvas id="myCanvas"></canvas>
                 <script>
@@ -193,6 +178,20 @@ function showContent() {
             <p>Edited: 1/13/2021</p>
             <code><p>By: Ari Cortes</p></code>
             <hr>
-            </footer>    
+            </footer>
+        
+        <button onclick="showContent()">Hidden picture</button>
+
+        <template>
+            <img src="creek.jpg" alt="Creek" width="200"/>
+        </template>
+
+        <script>
+            function showContent() {
+                var temp = document.getElementsByTagName("template")[0];
+                var clon = temp.content.cloneNode(true);
+                document.body.appendChild(clon);
+                }
+            </script>
         </body>
     </html>
